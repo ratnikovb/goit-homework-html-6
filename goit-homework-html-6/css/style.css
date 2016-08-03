@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Lucida Sans Unicode";
+    src: url('../font/lucida-sans-unicode.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Lucida Sans Unicode';
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+/*-------   header  ---------*/
+
+.wrapper {
+    width: 912px;
+    margin: 0 auto;
+}
+
+.phones__item {
+    font: 400 19.79px / 28px Arial;
+    font-size: 18px;
+    color: #5e696d;
+
+}
+.phones__item:first-of-type{
+    margin-right: 9px;
+}
+.icon-phone{
+    width: 22px;
+    height: 22px;
+    margin-right:4px ;
+    background: linear-gradient(0deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 17px;
+    display: inline-block;
+    line-height: 21px;
+}
+.phones {
+    padding-left:6px ;
+    float: left;
+}
+
+.login {
+    width: 496px;
+    display: block;
+    float: left;
+    padding: 5px 10px 5px 8px;
+    background: linear-gradient(0deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    box-shadow: 1px 3px 3px 0.00px rgba(150, 150, 150, 0.75);
+    border-radius: 5px;
+}
+
+.login__input {
+    display: inline-block;
+    width: 113px;
+    height: 16px;
+    margin-right: 8px ;
+    background-color: #ffffff;
+    margin: ;
+}
+.login__input:placeholder{
+    color: #97a2a6;
+    font-size: 12px;
+}
+
+.login__link {
+    font: 400 11px / 11px 'Lucida Sans Unicode';
+    color: #ffffff;
+}
+
+.login__link_underline {
+    margin-left: 20px;
+    color: #bfbfbf;
+    text-decoration: underline;
+}
+.login__link[type="submit"]{
+    position: relative;
+    border: 0;
+    background: none;
+    display: inline-block;
+
+}
+.login__link [type="submit"]:after{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+    background: #fff;
+    content: '';
+
+
+}

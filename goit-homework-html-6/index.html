@@ -3,29 +3,30 @@
 <head>
    <meta charset="UTF-8">
    <title>Document</title>
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/zazor-icon-font-codes.css">
+   <link rel="stylesheet" href="css/zazor-icon-font.css">
+   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <div class="wrapper">
        <header>
            <div class="phones">
-               <i></i><span>(044)123-45-67</span>
-               <span>(044)567-89-10</span>
+               <i class="icon-phone"></i><span class="phones__item">(044)123-45-67</span><span class="phones__item">(044)567-89-10</span>
             </div>
-            <div class="login-form">
+            <div class="login">
                 <form action="get">
-                    <input type="text">
-                    <input type="password">
-                    <button type="submit">вход</button>
+                    <input class="login__input" type="text" placeholder="логин">
+                    <input class="login__input" type="password" placeholder="пароль">
+                    <button class="login__link" type="submit">вход</button>
+                <a href="#" class="login__link">регистрация</a>
+                <a href="#" class="login__link login__link_underline">забыли пароль?</a>
                 </form>
-                <a href="#">регистрация</a>
-                <a href="#">забыли пароль?</a>
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li class="nav-links__item"><a href="#" class="nav-links__link"><i class=""></i></a></li>
+                    <li class="nav-links__item"><a href="#" class="nav-links__link"><i class=""></i></a></li>
+                    <li class="nav-links__item"><a href="#" class="nav-links__link"><i class=""></i></a></li>
                 </ul>
             </div>
        </header>
@@ -49,22 +50,22 @@
        <aside>
             <div class="catalogue aside">
                 <div class="menu--title__shadow">КАТАЛОГ ПРОДУКЦИИ:</div>
+                <div class="menu--title">ШИНЫ</div>
                 <ul class="side-menu">
-                   <div class="menu--title">ШИНЫ</div>
                     <li><a class="side-menu__item" href="#">Наименование 1</a></li>
                     <li><a class="side-menu__item" href="#">Наименование 2</a></li>
                     <li><a class="side-menu__item" href="#">Наименование 3</a></li>
                     <li><a class="side-menu__item" href="#">Наименование 4</a></li>
                 </ul>
+                <div class="menu--title">ДИСКИ</div>
                 <ul class="side-menu">
-                   <div class="menu--title">ДИСКИ</div>
                     <li><a class="side-menu__item" href="#">Наименование 1</a></li>
                     <li><a class="side-menu__item" href="#">Наименование 2</a></li>
                     <li><a class="side-menu__item" href="#">Наименование 3</a></li>
                     <li><a class="side-menu__item" href="#">Наименование 4</a></li>
                 </ul>
+                <div class="menu--title">БОЛТЫ</div>
                 <ul class="side-menu">
-                   <div class="menu--title">БОЛТЫ</div>
                     <li><a class="side-menu__item" href="#">Наименование 1</a></li>
                     <li><a class="side-menu__item" href="#">Наименование 2</a></li>
                     <li><a class="side-menu__item" href="#">Наименование 3</a></li>
@@ -72,24 +73,24 @@
                 </ul>
             </div>
        </aside>
-       <div class="content">
+       <div class="content goods">
            <div class="goods-item">
-               <div class="goods-brand">Goodyear</div>
-               <div class="goods-model">Ultra Grip Extreme</div>
-               <div class="goods-item-image"><img src="images/tire1.png" alt=""></div>
-               <div class="goods-price">90.00 <span>грн.</span></div>
+               <div class="goods-item__brand">Goodyear</div>
+               <div class="goods-item__model">Ultra Grip Extreme</div>
+               <div class="goods-item__image"><img src="images/tire1.png" alt=""></div>
+               <div class="goods-item__price">90.00 <span>грн.</span></div>
            </div>
            <div class="goods-item">
-               <div class="goods-brand">Nokian</div>
-               <div class="goods-model">Hakkapeliitta R</div>
-               <div class="goods-item-image"><img src="images/tire2.png" alt=""></div>
-               <div class="goods-price">115.00 <span>грн.</span></div>
+               <div class="goods-item__brand">Nokian</div>
+               <div class="goods-item__model">Hakkapeliitta R</div>
+               <div class="goods-item__image"><img src="images/tire2.png" alt=""></div>
+               <div class="goods-item__price">115.00 <span>грн.</span></div>
            </div>
            <div class="goods-item">
-               <div class="goods-brand">Hankook</div>
-               <div class="goods-model">K 708 155/65 R14</div>
-               <div class="goods-item-image"><img src="images/tire3.png" alt=""></div>
-               <div class="goods-price">393.00 <span>грн.</span></div>
+               <div class="goods-item__brand">Hankook</div>
+               <div class="goods-item__model">K 708 155/65 R14</div>
+               <div class="goods-item__image"><img src="images/tire3.png" alt=""></div>
+               <div class="goods-item__price">393.00 <span>грн.</span></div>
            </div>
 
        </div>
@@ -97,23 +98,42 @@
            <div class="brands aside">
               <form action="get">
                <div class="menu--title__shadow">бренды:</div>
-                  <ul class="brands-menu">
                      <div class="menu--title">ШИНЫ</div>
-                      <li class="brand-menu__item"><input type="checkbox">Бренд 1</li>
-                      <li class="brand-menu__item"><input type="checkbox">Бренд 2</li>
-                      <li class="brand-menu__item"><input type="checkbox">Бренд 3</li>
+                  <ul class="brands-menu">
+                      <li class="brands-menu__item"><input type="checkbox">Бренд 1</li>
+                      <li class="brands-menu__item"><input type="checkbox">Бренд 2</li>
+                      <li class="brands-menu__item"><input type="checkbox">Бренд 3</li>
                   </ul>
-                   <ul class="brands-menu">
                      <div class="menu--title">Диски</div>
-                      <li class="brand-menu__item"><input type="checkbox">Бренд 1</li>
-                      <li class="brand-menu__item"><input type="checkbox">Бренд 2</li>
-                      <li class="brand-menu__item"><input type="checkbox">Бренд 3</li>
+                   <ul class="brands-menu">
+                      <li class="brands-menu__item"><input type="checkbox">Бренд 1</li>
+                      <li class="brands-menu__item"><input type="checkbox">Бренд 2</li>
+                      <li class="brands-menu__item"><input type="checkbox">Бренд 3</li>
                   </ul>
                   <button type="submit">выбрать</button>
                 </form>
            </div>
        </aside>
-       <div class="logos-banner-sprite"></div>
+       <div class="brands-banner">
+           <a href="#" class="brands-banner__item"><img src="images/brand1.png" alt=""></a>
+           <a href="#" class="brands-banner__item"><img src="images/brand2.png" alt=""></a>
+           <a href="#" class="brands-banner__item"><img src="images/brand3.png" alt=""></a>
+           <a href="#" class="brands-banner__item"><img src="images/brand4.png" alt=""></a>
+           <a href="#" class="brands-banner__item"><img src="images/brand5.png" alt=""></a>
+           <a href="#" class="brands-banner__item"><img src="images/brand6.png" alt=""></a>
+           <a href="#" class="brands-banner__item"><img src="images/brand7.png" alt=""></a>
+           <a href="#" class="brands-banner__item"><img src="images/brand8.png" alt=""></a>
+       </div>
+       <footer>
+           <div class="footer-menu">
+               <ul>
+                   <li class="footer-menu__item"><a href="#" class="footer-menu__link" >О компании</a></li>
+                   <li class="footer-menu__item"><a href="#" class="footer-menu__link" >Доставка</a></li>
+                   <li class="footer-menu__item"><a href="#" class="footer-menu__link" >Статьи</a></li>
+                   <li class="footer-menu__item"><a href="#" class="footer-menu__link" >Контакты</a></li>
+               </ul>
+           </div>
+       </footer>
    </div>
 </body>
 </html>
