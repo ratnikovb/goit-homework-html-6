@@ -16,7 +16,7 @@
                 <form class="login__form" action="get">
                     <input class="login__input" type="text" placeholder="логин">
                     <input class="login__input" type="password" placeholder="пароль">
-                    <button class="login__link" type="submit">вход</button>
+                    <button class="login__link login__submit-btn" type="submit">вход</button>
                 </form> <a href="#" class="login__link">регистрация</a> <a href="#" class="login__link login__link_underline">забыли пароль?</a> </div>
             <div class="nav-links">
                 <ul>
@@ -65,62 +65,98 @@
                 </ul>
             </div>
             <div class="goods">
-                <div class="goods-item">
+                <a class="goods-item" href="#">
                     <div class="goods-item__brand">Goodyear</div>
                     <div class="goods-item__model">Ultra Grip Extreme</div>
                     <div class="goods-item__image"><img src="images/tire1.png" alt=""></div>
-                    <div class="goods-item__price">90.00 <span>грн.</span></div>
-                </div>
-                <div class="goods-item">
+                    <div class="goods-item__price">90.00 <span class="goods-item__currency">грн.</span></div>
+                </a>
+                <a class="goods-item" href="#">
                     <div class="goods-item__brand">Nokian</div>
                     <div class="goods-item__model">Hakkapeliitta R</div>
                     <div class="goods-item__image"><img src="images/tire2.png" alt=""></div>
                     <div class="goods-item__price">115.00 <span>грн.</span></div>
-                </div>
-                <div class="goods-item">
+                </a>
+                <a class="goods-item" href="#">
                     <div class="goods-item__brand">Hankook</div>
                     <div class="goods-item__model">K 708 155/65 R14</div>
                     <div class="goods-item__image"><img src="images/tire3.png" alt=""></div>
                     <div class="goods-item__price">393.00 <span>грн.</span></div>
-                </div>
+                </a>
+                <a class="goods-item" href="#">
+                    <div class="goods-item__brand">Goodyear</div>
+                    <div class="goods-item__model">Ultra Grip Extreme</div>
+                    <div class="goods-item__image"><img src="images/tire1.png" alt=""></div>
+                    <div class="goods-item__price">90.00 <span class="goods-item__currency">грн.</span></div>
+                </a>
+                <a class="goods-item" href="#">
+                    <div class="goods-item__brand">Nokian</div>
+                    <div class="goods-item__model">Hakkapeliitta R</div>
+                    <div class="goods-item__image"><img src="images/tire2.png" alt=""></div>
+                    <div class="goods-item__price">115.00 <span>грн.</span></div>
+                </a>
+                <a class="goods-item" href="#">
+                    <div class="goods-item__brand">Hankook</div>
+                    <div class="goods-item__model">K 708 155/65 R14</div>
+                    <div class="goods-item__image"><img src="images/tire3.png" alt=""></div>
+                    <div class="goods-item__price">393.00 <span>грн.</span></div>
+                </a>
+                <a class="goods-item" href="#">
+                    <div class="goods-item__brand">Goodyear</div>
+                    <div class="goods-item__model">Ultra Grip Extreme</div>
+                    <div class="goods-item__image"><img src="images/tire1.png" alt=""></div>
+                    <div class="goods-item__price">90.00 <span class="goods-item__currency">грн.</span></div>
+                </a>
+                <a class="goods-item" href="#">
+                    <div class="goods-item__brand">Nokian</div>
+                    <div class="goods-item__model">Hakkapeliitta R</div>
+                    <div class="goods-item__image"><img src="images/tire2.png" alt=""></div>
+                    <div class="goods-item__price">115.00 <span>грн.</span></div>
+                </a>
+                <a class="goods-item" href="#">
+                    <div class="goods-item__brand">Hankook</div>
+                    <div class="goods-item__model">K 708 155/65 R14</div>
+                    <div class="goods-item__image"><img src="images/tire3.png" alt=""></div>
+                    <div class="goods-item__price">393.00 <span>грн.</span></div>
+                </a>
             </div>
             <div class="brands aside">
                 <form action="get">
                     <div class="menu-title menu-title_shadow"><i class="icon-doc-text"></i>бренды:</div>
+                    <ul class="brands-menu">
                     <div class="menu-title"><i class="icon-circle"></i>ШИНЫ</div>
-                    <ul class="brands-menu">
                         <li class="brands-menu__item">
-                            <input type="checkbox">Бренд 1</li>
+                            <input class="brands-menu__check" type="checkbox">Бренд 1</li>
                         <li class="brands-menu__item">
-                            <input type="checkbox">Бренд 2</li>
+                            <input class="brands-menu__check" type="checkbox">Бренд 2</li>
                         <li class="brands-menu__item">
-                            <input type="checkbox">Бренд 3</li>
+                            <input class="brands-menu__check" type="checkbox">Бренд 3</li>
                     </ul>
+                    <ul class="brands-menu">
                     <div class="menu-title"><i class="icon-circle"></i>Диски</div>
-                    <ul class="brands-menu">
                         <li class="brands-menu__item">
-                            <input type="checkbox">Бренд 1</li>
+                            <input class="brands-menu__check" type="checkbox">Бренд 1</li>
                         <li class="brands-menu__item">
-                            <input type="checkbox">Бренд 2</li>
+                            <input class="brands-menu__check" type="checkbox">Бренд 2</li>
                         <li class="brands-menu__item">
-                            <input type="checkbox">Бренд 3</li>
+                            <input class="brands-menu__check" type="checkbox">Бренд 3</li>
                     </ul>
-                    <button type="submit">выбрать</button>
+                    <button type="submit" class="brands__btn">выбрать</button>
                 </form>
             </div>
         </div>
-        <footer>
-            <div class="footer-menu">
-                <div class="brands-banner">
-                    <a href="#" class="brands-banner__item"><img src="images/brand1.png" alt=""></a>
-                    <a href="#" class="brands-banner__item"><img src="images/brand2.png" alt=""></a>
-                    <a href="#" class="brands-banner__item"><img src="images/brand3.png" alt=""></a>
-                    <a href="#" class="brands-banner__item"><img src="images/brand4.png" alt=""></a>
-                    <a href="#" class="brands-banner__item"><img src="images/brand5.png" alt=""></a>
-                    <a href="#" class="brands-banner__item"><img src="images/brand6.png" alt=""></a>
-                    <a href="#" class="brands-banner__item"><img src="images/brand7.png" alt=""></a>
-                    <a href="#" class="brands-banner__item"><img src="images/brand8.png" alt=""></a>
+                <div class="brands-logo">
+                    <a href="#" class="brands-logo__item"><img src="images/brand1.png" alt=""></a>
+                    <a href="#" class="brands-logo__item"><img src="images/brand2.png" alt=""></a>
+                    <a href="#" class="brands-logo__item"><img src="images/brand3.png" alt=""></a>
+                    <a href="#" class="brands-logo__item"><img src="images/brand4.png" alt=""></a>
+                    <a href="#" class="brands-logo__item"><img src="images/brand5.png" alt=""></a>
+                    <a href="#" class="brands-logo__item"><img src="images/brand6.png" alt=""></a>
+                    <a href="#" class="brands-logo__item"><img src="images/brand7.png" alt=""></a>
+                    <a href="#" class="brands-logo__item"><img src="images/brand8.png" alt=""></a>
                 </div>
+        <footer class="footer">
+            <div class="footer-menu">
                 <ul>
                     <li class="footer-menu__item"><a href="#" class="footer-menu__link">О компании</a></li>
                     <li class="footer-menu__item"><a href="#" class="footer-menu__link">Доставка</a></li>
