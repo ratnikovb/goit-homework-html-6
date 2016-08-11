@@ -35,7 +35,8 @@ ul {
 /*-------   header  ---------*/
 
 header {
-    padding: 18px 0 18px 0;
+/*    padding: 18px 0 18px 0;*/
+        margin: 19px 0 6px 0;
 }
 .wrapper {
     width: 912px;
@@ -64,7 +65,7 @@ header {
     text-align: center;
 }
 .phones {
-    padding-left: 10px;
+    padding-left: 8px;
     margin-right: 16px;
     float: left;
 }
@@ -175,7 +176,7 @@ header {
     margin: 7px 0px 14px 0px;
     background: linear-gradient(180deg,  #576068 0%,#000000 100%);
     box-shadow: 3px 3px 5px 0.00px rgba(0, 0, 0, 0.75);
-    border-radius: 10px;
+    border-radius: 7px;
 
 }
 
@@ -453,4 +454,8 @@ button {
 .footer-menu__item:last-of-type{
     border-right: none;
     padding-right:0;
+}
+
+.modul {
+    height: 135px;
 }
