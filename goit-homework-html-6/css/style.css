@@ -193,6 +193,7 @@ header {
     box-shadow: 3px 3px 5px 0.00px rgba(0, 0, 0, 0.75);
     border-radius: 7px;
     height: 33px;
+    border: 1px solid #0d1642;
     box-sizing: border-box;
 
 }
@@ -200,19 +201,24 @@ header {
 .main-menu__item {
     display: inline-block;
 }
+.main-menu__item::first-child{
+    padding-right: 0px;
+}
 
 .main-menu__link {
     display: block;
-    padding: 8px 22px 8px 22px;
+    padding: 8px 18px 8px 21px;
     font: 400 14px / 14px 'Lucida Sans Unicode';
     color: #b1bcc0;
     text-transform: uppercase;
     background: transparent;
+    box-sizing: border-box;
 }
 .main-menu__link:hover{
     color: #ffffff;
     border-radius: 10px;
-    background:  linear-gradient(0deg, #206988 0%, #114165 59%, #0c3256 100%);
+    padding: 8px 18px 8px 21px;
+    background:  linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
 }
 .cart {
     float: right;
@@ -228,6 +234,8 @@ header {
 }
 .main-menu-container {
     float: right;
+    padding: 4px 0 4px;
+    box-sizing: border-box;
 }
 
 .cart__name,
@@ -278,9 +286,10 @@ header {
 }
 .icon-circle {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 2px;
+    width: 22px;
+    height: 22px;
+    margin-right: 1px;
+    margin-left: 4px;
     background: #fff;
     border: 4px solid #114165;
     border-radius: 50%;
@@ -297,7 +306,7 @@ header {
     border: 1px solid #79878d;
     color: #114165;
     text-transform: uppercase;
-    line-height: 24px;
+/*    line-height: 24px;*/
     font-size: 15px;
     vertical-align: middle;
 }
@@ -305,19 +314,20 @@ header {
 .menu-title_shadow {
     width: 181px;
     margin-bottom: 15px;
-    font-size: 13px;
-    padding: 2px 0px 2px 4px;
+    font-size: 14px;
+    padding: 2px 0px 1px 3px;
     box-shadow: 1px 3px 3px 0.00px rgba(150, 150, 150, 0.75);
     box-sizing: border-box;
 }
 .catalogue .menu-title_shadow{
     font-size: 12.7px;
+    margin-top: 3px;
 }
 
 .icon-doc-text {
     width: 22px;
-    height: 22px;
-    margin-right: 4px;
+    height: 21px;
+    margin-right: 3px;
     background: linear-gradient(0deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
     border-radius: 50%;
     color: #fff;
@@ -442,7 +452,9 @@ button {
 .brands-menu__check {
     margin-right: 15px;
 }
-
+.brands-menu .menu-title{
+    width: 128px;
+}
 .brands-logo {
     width: 676px;
     margin: 38px auto 25px;
@@ -454,6 +466,7 @@ button {
     margin-right: 12px
 }
 
+/*------  footer  ------*/
 .footer {
     width: 100%;
     background: #213a4d;
@@ -491,5 +504,5 @@ button {
 }
 
 .modul {
-    height: 135px;
+    height: 150px;
 }
