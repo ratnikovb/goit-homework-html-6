@@ -221,8 +221,8 @@ header {
     background:  linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
 }
 .cart {
-    float: right;
-    margin: 8px 14px 0 46px;
+   float: right;
+    margin: 8px 12px 0 46px;
 }
 .cart .icon-basket{
     color: #0d5a8f;
@@ -267,7 +267,7 @@ header {
     margin-left: -2px;
 }
 .cart__value:last-of-type{
-     margin-left: 5px;
+    margin-left: 6px;
 }
 
 
@@ -288,8 +288,7 @@ header {
     display: inline-block;
     width: 22px;
     height: 22px;
-    margin-right: 1px;
-    margin-left: 4px;
+    margin: 0 3px 0 4px;
     background: #fff;
     border: 4px solid #114165;
     border-radius: 50%;
@@ -298,22 +297,22 @@ header {
 }
 
 .menu-title {
-  display: inline-block;
+    display: inline-block;
     width: 148px;
-    margin-bottom: 8px;
-    padding: 2px 0px 2px 4px;
+    margin-bottom: 5px;
+    padding: 3px 0px 2px 2px;
     border-radius: 14px;
     border: 1px solid #79878d;
     color: #114165;
     text-transform: uppercase;
-/*    line-height: 24px;*/
-    font-size: 15px;
+    /* line-height: 24px; */
+    font-size: 14px;
     vertical-align: middle;
 }
 
 .menu-title_shadow {
     width: 181px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     font-size: 14px;
     padding: 2px 0px 1px 3px;
     box-shadow: 1px 3px 3px 0.00px rgba(150, 150, 150, 0.75);
@@ -338,19 +337,17 @@ header {
     vertical-align: middle;
 }
 
-.side-menu__item{
+.side-menu__item {
     color: #465961;
-    margin-bottom: 15px;
-    margin-left: 30px;
-    padding-left: 11px;
-    font-size: 13px;
+    margin: 0px 0 11px 32px;
+    padding: 0px 0 0 16px;
+    font-size: 12.73px;
     line-height: 15.4px;
-    background: url(../images/list-marker.png) no-repeat ;
-
+    background: url(../images/list-marker.png)5px 1px no-repeat;
 }
 
-.side-menu__item:first-of-type{
-/*    margin-top: 8px;*/
+.side-menu__item:last-of-type{
+    margin-bottom: 0px;
 }
 .side-menu__item:hover {
     color: #0c3256;
@@ -398,12 +395,12 @@ header {
 }
 
 .goods-item__brand {
-    font: 700 15px  'Lucida Sans Unicode';
+    font: 700 14.59px / 12.77px 'Lucida Sans Unicode';
     color: #206988;
 }
 
 .goods-item__model {
-    font-size: 13px;
+    font-size: 12.73px;
     color: #1f2528;
 }
 
@@ -504,5 +501,5 @@ button {
 }
 
 .modul {
-    height: 150px;
+    height: 151px;
 }
